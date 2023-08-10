@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivation Form</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color:cadetblue;
+            border-radius: 5px;
+            border: 5px double;
+        }
+        body{
+            background-color:azure;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>Deactivation Form</h1>
+    <form action="Deactivate.html" target="_blank">
+        <fieldset>
+            <Legend>Enter Details</Legend>
+            <label for="id">Username:</label>
+            <input type="text" id="id" value="Deepak Kumar" required><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" value="Abhi12345" required><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob"required>
+        </fieldset>
+        <fieldset>
+            <legend>Security Question</legend>
+            <label for="sq">Select a Question:</label>
+            <select name="Select a Question:" id="sq">
+                    <option value="1">What is your Nick name?</option>
+                    <option value="2">In which country you were born?</option>
+                    <option value="3">What is your Favourite sports?</option>
+            </select> <br>
+            <label for="ans">Answer Field:</label>
+            <input type="text" id="ans" required>
+        </fieldset>
+        <fieldset>
+            <legend>Reason for Deactivation</legend>
+            <label for="re">Reason for Deactivating Account:</label>
+            <select name="Reason for Deactivating Account:" id="re">
+                <option value="1">Addicted to the App</option>
+                <option value="2">Irrelevant ads</option>
+                <option value="3">Too much Sensitive Content</option>
+                <option value="4">Not Interested</option>
+            </select> <br>
+            <label for="co">Comments:</label><br>
+            <textarea name="Comments" id="co" cols="50" rows="10" required></textarea>
+        </fieldset>
+        <input type="submit" style="color:blueviolet;background-color:bisque;">
+        <input type="reset">
+    </fieldset>
+    </form>
+</body>
+</html>
